@@ -55,3 +55,37 @@ nav ul li {
     color: var(--cor-links);
     border-bottom: 3px solid var(--cor-links);
 }
+
+.area-titulo {
+    background-color: var(--cor-neutra-escura);
+    padding: 1rem;
+}
+
+.titulo-1 {
+    color: var(--cor-neutra-clara);
+}
+
+.titulo-2 {
+    color: var(--cor-detalhe-escura);
+}
+
+.conteudo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--cor-detalhe-media);
+    margin: 1rem;
+}
+
+.rodape {
+    background-color: var(--cor-detalhe-media);
+    color: var(--cor-neutra-clara);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.texto-rodape {
+    font-size: 1.125rem;
+    padding: 1rem;
+}
