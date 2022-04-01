@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML/CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="titulonav">Curso de HTML/CSS</a>
+            <ul class="navlista">
+                <li><a href="index.html" class="navlink">Início</a></li>
+                <li><a href="imagem.html" class="navlink">Imagens</a></li>
+                <li><a href="audio.html" class="navlink">Áudio</a></li>
+                <li><a href="video.html" class="navlink">Vídeo</a></li>
+                <li><a href="mapas.html" class="navlink">Mapas</a></li>
+                <li><a href="tabela.html" class="navlink">Tabela</a></li>
+                <li><a href="formulario.html" class="navlink">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <header class="area-titulo">
+                <h1 class="titulo-1">Trabalhando com Formulários</h1>
+            </header>
+            <article class="conteudo">
+                <h2 class="titulo-2">Utilizando diferentes tipos de caixa de dados</h2>
+                <form action="javascript:alert('Formulário enviado!');" name="frmCadastro" method="post">
+                    <div class="conteudo-formulario">
+                       <label for="txtNome">Nome: </label>
+                        <input type="text" name="nome" id="txtNome" maxlength="50" required autofocus>
+                        <label for="txtTelefone">Telefone: </label>
+                        <input type="tel" name="telefone" id="txtTelefone" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" placeholder="Exemplo: (00) 00000-0000" required>
+                        <label for="txtEmail">E-mail: </label>
+                        <input type="email" name="email" id="txtEmail" maxlength="40" required>
+                        <label for="txtSenha">Senha: </label>
+                        <input type="password" name="senha" id="txtSenha" minlength="6" maxlength="12" required>
+                        <label for="txtData">Data de nascimento:</label>
+                        <input type="date" name="datadenascimento" id="txtData">
+                        <label for="txtHora"> Hora marcada: </label>
+                        <input type="time" name="horamarcada" id="txtHora">
+                        <label for="txtIdade">Idade: </label>
+                        <input type="number" name="idade" id="txtIdade" min="0" max="120">
+
+                        <br>
+                        <p>Quais alimentos você costuma consumir?</p>
+                        <input type="checkbox" name="Comida" id="ChkComida1" value="Bovina"><label for="ChkComida1">Carne Bovina</label>
+                        <input type="checkbox" name="Comida" id="ChkComida2" value="Suína"><label for="ChkComida2">Carne Suína</label>
+                        <input type="checkbox" name="Comida" id="ChkComida3" value="Frangos"><label for="ChkComida3">Frangos</label>
+                        <input type="checkbox" name="Comida" id="ChkComida4" value="Peixe"><label for="ChkComida4">Peixes</label>
+                        <input type="checkbox" name="Comida" id="ChkComida5" value="Legumes"><label for="ChkComida5">Legumes</label>
+                        <input type="checkbox" name="Comida" id="ChkComida6" value="Verduras"><label for="ChkComida6">Verduras</label>
+                        <input type="checkbox" name="Comida" id="ChkComida7" value="Cereais"><label for="ChkComida7">Cereais</label>
+
+                        <br>
+                        <p>O Significado da sigla HTML?</p>
+                        <input type="radio" name="alternativa" id="radAlternativaA" value="A"><label for="radAlternativaA">Hyper Text Model Language</label>
+                        <input type="radio" name="alternativa" id="radAlternativaB" value="B"><label for="radAlternativaB">Hyper Text Markup Language</label>
+                        <input type="radio" name="alternativa" id="radAlternativaC" value="C"><label for="radAlternativaC">Hyper Text Model Layer</label>
+                        <input type="radio" name="alternativa" id="radAlternativaD" value="D"><label for="radAlternativaD">Hyper Text Markup Layer</label>
+
+
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="texto-rodape">Página desenvolvida por Thyfanny - &copy; <script>javascript:document.write(new Date().getFullYear());</script></p>
+    </footer>
+</body>
+</html>

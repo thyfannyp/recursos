@@ -105,6 +105,50 @@ figure {
     margin: 0 15px 15px 0;
 }
 
+.video {
+    width: 480px;
+    height: 270px;
+    float: left;
+    margin: 0 15px 5px 0;
+}
+
+.mapa {
+    width: 50%;
+}
+
+table {
+    width: 80%;
+    background-color: var(--cor-neutra-clara);
+    border: 1px solid var(--cor-neutra-media);
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid var(--cor-neutra-media);
+    background-color: var(--cor-detalhe-escura);
+    color: var(--cor-neutra-clara);
+    padding: 5px;
+}
+
+tr {
+    border: 1px solid var(--cor-neutra-media);
+}
+
+td {
+    border: 1px dashed var(--cor-neutra-media);
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #D3D3D3;
+}
+
+tr:hover {
+    background-color: var(--cor-links);
+    color: var(--cor-neutra-clara);
+}
+
 .rodape {
     background-color: var(--cor-detalhe-media);
     color: var(--cor-neutra-clara);
