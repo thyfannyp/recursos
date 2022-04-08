@@ -59,15 +59,39 @@
                         <input type="checkbox" name="Comida" id="ChkComida6" value="Verduras"><label for="ChkComida6">Verduras</label>
                         <input type="checkbox" name="Comida" id="ChkComida7" value="Cereais"><label for="ChkComida7">Cereais</label>
 
-                        <br>
                         <p>O Significado da sigla HTML?</p>
                         <input type="radio" name="alternativa" id="radAlternativaA" value="A"><label for="radAlternativaA">Hyper Text Model Language</label>
                         <input type="radio" name="alternativa" id="radAlternativaB" value="B"><label for="radAlternativaB">Hyper Text Markup Language</label>
                         <input type="radio" name="alternativa" id="radAlternativaC" value="C"><label for="radAlternativaC">Hyper Text Model Layer</label>
                         <input type="radio" name="alternativa" id="radAlternativaD" value="D"><label for="radAlternativaD">Hyper Text Markup Layer</label>
 
+                        <label for="selRegiao">Qual é a região que você mora?</label>
+                        <select name="regiao" id="selRegiao">
+                            <option value="selecione">Selecione</option>
+                            <option value="sul">Sul</option>
+                            <option value="sudeste">Sudeste</option>
+                            <option value="centro-oeste">Centro-Oeste</option>
+                            <option value="nordeste">Nordeste</option>
+                            <option value="norte">Norte</option>
+                        </select>
 
+                        <label for="dtlCidade">Qual cidade da região você mora?</label>
+                        <input list="cidades">
+                        <datalist id="cidades">
+                            <option value="Aparecida"></option>
+                            <option value="Guaratingueta"></option>
+                            <option value="Jacarei"></option>
+                            <option value="Lorena"></option>
+                            <option value="Pindamonhangaba"></option>
+                            <option value="Sao Jose dos Campos"></option>
+                            <option value="Taubate"></option>
+                        </datalist>
+
+                        <label for="txaMensagem">Escreve sua mensagem aqui:</label>
+                        <textarea name="mensagem" id="txaMensagem" cols="50" rows="5" maxlength="1024"></textarea>
+                        <br>
                         <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
                     </div>
                 </form>
             </article>
