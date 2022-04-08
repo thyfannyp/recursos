@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de HTML/CSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -34,39 +37,57 @@
                 <h2 class="titulo-2">Utilizando diferentes tipos de caixa de dados</h2>
                 <form action="javascript:alert('Formulário enviado!');" name="frmCadastro" method="post">
                     <div class="conteudo-formulario">
-                       <label for="txtNome">Nome: </label>
-                        <input type="text" name="nome" id="txtNome" maxlength="50" required autofocus>
-                        <label for="txtTelefone">Telefone: </label>
-                        <input type="tel" name="telefone" id="txtTelefone" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" placeholder="Exemplo: (00) 00000-0000" required>
-                        <label for="txtEmail">E-mail: </label>
-                        <input type="email" name="email" id="txtEmail" maxlength="40" required>
-                        <label for="txtSenha">Senha: </label>
-                        <input type="password" name="senha" id="txtSenha" minlength="6" maxlength="12" required>
-                        <label for="txtData">Data de nascimento:</label>
-                        <input type="date" name="datadenascimento" id="txtData">
-                        <label for="txtHora"> Hora marcada: </label>
-                        <input type="time" name="horamarcada" id="txtHora">
-                        <label for="txtIdade">Idade: </label>
+                        <label for="txtNome" class="formulario-label">Nome: </label>
+                        <input type="text" name="nome" class="formulario-caixa" id="txtNome" maxlength="50" required
+                            autofocus>
+                        <label for="txtTelefone" class="formulario-label">Telefone: </label>
+                        <input type="tel" name="telefone" class="formulario-caixa" id="txtTelefone" maxlength="15"
+                            pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" placeholder="Exemplo: (00) 00000-0000" required>
+                        <label for="txtEmail" class="formulario-label">E-mail: </label>
+                        <input type="email" name="email" class="formulario-caixa" id="txtEmail" maxlength="40" required>
+                        <label for="txtSenha" class="formulario-label">Senha: </label>
+                        <input type="password" name="senha" class="formulario-caixa" id="txtSenha" minlength="6"
+                            maxlength="12" required>
+                        <label for="txtData" class="formulario-label">Data de nascimento:</label>
+                        <input type="date" name="datadenascimento" class="formulario-caixa" id="txtData">
+                        <label for="txtHora" class="formulario-label"> Hora marcada: </label>
+                        <input type="time" name="horamarcada" class="formulario-caixa" id="txtHora">
+                        <label for="txtIdade" class="formulario-label">Idade: </label>
                         <input type="number" name="idade" id="txtIdade" min="0" max="120">
 
+                        <fieldset class="formulario-grupo">
+                            <p>Quais alimentos você costuma consumir?</p>
+                            <input type="checkbox" name="Comida" id="ChkComida1" value="Bovina"><label
+                                for="ChkComida1">Carne Bovina</label>
+                            <input type="checkbox" name="Comida" id="ChkComida2" value="Suína"><label
+                                for="ChkComida2">Carne Suína</label>
+                            <input type="checkbox" name="Comida" id="ChkComida3" value="Frangos"><label
+                                for="ChkComida3">Frangos</label>
+                            <input type="checkbox" name="Comida" id="ChkComida4" value="Peixe"><label
+                                for="ChkComida4">Peixes</label>
+                            <input type="checkbox" name="Comida" id="ChkComida5" value="Legumes"><label
+                                for="ChkComida5">Legumes</label>
+                            <input type="checkbox" name="Comida" id="ChkComida6" value="Verduras"><label
+                                for="ChkComida6">Verduras</label>
+                            <input type="checkbox" name="Comida" id="ChkComida7" value="Cereais"><label
+                                for="ChkComida7">Cereais</label>
+                        </fieldset>
+
+                        <fieldset class="formulario-grupo">
+                            <p>Qual é o significado da sigla HTML?</p>
+                        <input type="radio" name="alternativa" id="radAlternativaA" value="A"><label
+                            for="radAlternativaA">Hyper Text Model Language</label>
+                        <input type="radio" name="alternativa" id="radAlternativaB" value="B"><label
+                            for="radAlternativaB">Hyper Text Markup Language</label>
+                        <input type="radio" name="alternativa" id="radAlternativaC" value="C"><label
+                            for="radAlternativaC">Hyper Text Model Layer</label>
+                        <input type="radio" name="alternativa" id="radAlternativaD" value="D"><label
+                            for="radAlternativaD">Hyper Text Markup Layer</label>
+                        </fieldset>
                         <br>
-                        <p>Quais alimentos você costuma consumir?</p>
-                        <input type="checkbox" name="Comida" id="ChkComida1" value="Bovina"><label for="ChkComida1">Carne Bovina</label>
-                        <input type="checkbox" name="Comida" id="ChkComida2" value="Suína"><label for="ChkComida2">Carne Suína</label>
-                        <input type="checkbox" name="Comida" id="ChkComida3" value="Frangos"><label for="ChkComida3">Frangos</label>
-                        <input type="checkbox" name="Comida" id="ChkComida4" value="Peixe"><label for="ChkComida4">Peixes</label>
-                        <input type="checkbox" name="Comida" id="ChkComida5" value="Legumes"><label for="ChkComida5">Legumes</label>
-                        <input type="checkbox" name="Comida" id="ChkComida6" value="Verduras"><label for="ChkComida6">Verduras</label>
-                        <input type="checkbox" name="Comida" id="ChkComida7" value="Cereais"><label for="ChkComida7">Cereais</label>
 
-                        <p>O Significado da sigla HTML?</p>
-                        <input type="radio" name="alternativa" id="radAlternativaA" value="A"><label for="radAlternativaA">Hyper Text Model Language</label>
-                        <input type="radio" name="alternativa" id="radAlternativaB" value="B"><label for="radAlternativaB">Hyper Text Markup Language</label>
-                        <input type="radio" name="alternativa" id="radAlternativaC" value="C"><label for="radAlternativaC">Hyper Text Model Layer</label>
-                        <input type="radio" name="alternativa" id="radAlternativaD" value="D"><label for="radAlternativaD">Hyper Text Markup Layer</label>
-
-                        <label for="selRegiao">Qual é a região que você mora?</label>
-                        <select name="regiao" id="selRegiao">
+                        <label for="selRegiao" class="formulario-label">Qual é a região que você mora?</label>
+                        <select name="regiao" id="selRegiao" class="formulario-caixa">
                             <option value="selecione">Selecione</option>
                             <option value="sul">Sul</option>
                             <option value="sudeste">Sudeste</option>
@@ -75,8 +96,8 @@
                             <option value="norte">Norte</option>
                         </select>
 
-                        <label for="dtlCidade">Qual cidade da região você mora?</label>
-                        <input list="cidades">
+                        <label for="dtlCidade" class="formulario-label">Qual cidade da região você mora?</label>
+                        <input list="cidades" class="formulario-caixa">
                         <datalist id="cidades">
                             <option value="Aparecida"></option>
                             <option value="Guaratingueta"></option>
@@ -87,18 +108,22 @@
                             <option value="Taubate"></option>
                         </datalist>
 
-                        <label for="txaMensagem">Escreve sua mensagem aqui:</label>
-                        <textarea name="mensagem" id="txaMensagem" cols="50" rows="5" maxlength="1024"></textarea>
-                        <br>
+                        <label for="txaMensagem" class="formulario-label">Escreve sua mensagem aqui:</label>
+                        <textarea name="mensagem" id="txaMensagem" cols="50" rows="5" maxlength="1024" class="formulario-caixa"></textarea>
+                        <div class="formulario-area-botoes">
                         <button type="submit">Enviar</button>
                         <button type="reset">Limpar</button>
+                        </div>
                     </div>
                 </form>
             </article>
         </section>
     </main>
     <footer class="rodape">
-        <p class="texto-rodape">Página desenvolvida por Thyfanny - &copy; <script>javascript:document.write(new Date().getFullYear());</script></p>
+        <p class="texto-rodape">Página desenvolvida por Thyfanny - &copy;
+            <script>javascript: document.write(new Date().getFullYear());</script>
+        </p>
     </footer>
 </body>
+
 </html>
